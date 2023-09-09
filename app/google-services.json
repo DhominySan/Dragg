@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "459716498321",
+    "project_id": "dragg-bf167",
+    "storage_bucket": "dragg-bf167.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459716498321:android:1c1e0b198f2b4db6f40030",
+        "android_client_info": {
+          "package_name": "com.example.dragg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459716498321-7ugp9uoq8gmp5g7t4hp19fnciouf3t9s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFEg8qIan99dtBKiuIgCoMYKy8o1qGmYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459716498321-7ugp9uoq8gmp5g7t4hp19fnciouf3t9s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
