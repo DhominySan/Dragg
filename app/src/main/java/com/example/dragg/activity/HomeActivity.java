@@ -2,8 +2,10 @@ package com.example.dragg.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.dragg.R;
 import com.example.dragg.Util.ConfiguracaoBd;
@@ -21,6 +23,12 @@ public class HomeActivity extends AppCompatActivity {
         auth = ConfiguracaoBd.Firebaseautenticacao();
     }
 
+    public void comecaar(View v){
+        Intent i = new Intent(this, SelecaoActivity.class);
+        startActivity(i);
+    }
+
+
     public void deslogar(View view){
         try{
             auth.signOut();
@@ -29,5 +37,6 @@ public class HomeActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
 
 }

@@ -2,8 +2,20 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Dragg" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#3F96FF</item>
+        <item name="colorPrimaryVariant">#3F96FF</item>
     </style>
 
+
+
     <style name="Theme.Dragg" parent="Base.Theme.Dragg" />
+
+    <style name="Widget.App.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <item name="colorOnPrimary">@color/black</item>
+    </style>
+
 </resources>
