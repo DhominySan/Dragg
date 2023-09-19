@@ -1,5 +1,6 @@
 package com.example.dragg;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -61,4 +62,14 @@ public class ImagensFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_imagens, container, false);
     }
+
+   // public void indopramain(View v){
+      //  Intent i = new Intent(this, MainActivity.class);
+      //  startActivity(i);
+    //}
+
+
+
+
+
 }
