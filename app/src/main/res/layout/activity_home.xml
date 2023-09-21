@@ -23,7 +23,7 @@
             android:background="@drawable/botaobackground"
             android:backgroundTint="#000000"
             android:onClick="deslogar"
-            android:text="Deslogar"
+            android:text="@string/deslogar"
             android:textSize="17sp"
             tools:ignore="MissingConstraints" />
 
@@ -56,7 +56,7 @@
                 android:layout_width="302dp"
 
                 android:layout_height="wrap_content"
-                android:text="Vamos Começar"
+                android:text="@string/vamos_come_ar"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="24sp"
@@ -74,7 +74,7 @@
                 android:layout_marginRight="3dp"
                 android:background="@drawable/botaobackground"
                 android:onClick="comecaar"
-                android:text="Sobre Nós"
+                android:text="@string/sobre_n_s"
                 android:textColor="@color/black"
                 android:textSize="20sp"
 
@@ -92,7 +92,7 @@
                 android:background="@drawable/botaobackground2"
                 android:onClick="testbaixar"
                 android:textColor="@color/fundo"
-                android:text="Começar"
+                android:text="@string/come_ar"
                 android:textSize="20sp"/>
         </TableRow>
 

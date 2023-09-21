@@ -22,6 +22,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.dragg.MainActivity;
+import com.example.dragg.MenuActivity;
 import com.example.dragg.R;
 import com.example.dragg.Util.ConfiguracaoBd;
 import com.google.firebase.auth.FirebaseAuth;
@@ -57,7 +58,7 @@ public class HomeActivity extends AppCompatActivity {
             public void onAuthenticationSucceeded(@NonNull BiometricPrompt.AuthenticationResult result) {
                 super.onAuthenticationSucceeded(result);
                 // Autenticação bem-sucedida, vá para a próxima atividade
-                Intent intent = new Intent(HomeActivity.this, MainActivity.class);
+                Intent intent = new Intent(HomeActivity.this, MenuActivity.class);
                 startActivity(intent);
             }
 
@@ -87,7 +88,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void testbaixar(View v){
-        Intent i = new Intent(this, MainActivity.class);
+        Intent i = new Intent(this, MenuActivity.class);
         startActivity(i);
     }
 

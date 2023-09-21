@@ -2,6 +2,5 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Dragg" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-         <item name="colorPrimary">#FF1F85FF</item>
     </style>
 </resources>

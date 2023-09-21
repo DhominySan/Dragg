@@ -2,8 +2,30 @@
     <string name="app_name">Dragg</string>
     <string name="nomeDragg">Dragg</string>
     <string name="LogoMain">TODO</string>
-    <string name="cadastrar">Cadastrar</string>
-    <string name="menu_home">Inicio</string>
+    <string name="cadastrar" translatable="false">Cadastrar</string>
+    <string name="menu_home" translatable="false">Inicio</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="voltar" translatable="false">Voltar</string>
+    <string name="ffff">TODO</string>
+    <string name="vamos_come_ar" translatable="false">Vamos Começar</string>
+    <string name="sobre_n_s" translatable="false">Sobre Nós</string>
+    <string name="come_ar" translatable="false">Começar</string>
+    <string name="deslogar">Deslogar</string>
+    <string name="nome">Nome</string>
+    <string name="senha">Senha</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="senhaa">Senha</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="entrar">Entrar</string>
+    <string name="seja_bem_vindo">Seja Bem-vindo</string>
+    <string name="oque_deseja_hoje">Oque deseja hoje?</string>
+    <string name="jogos">Jogos</string>
+    <string name="imagens">Imagens</string>
+    <string name="outros">Outros</string>
+    <string name="Aviso" translatable="false">Ooops ainda estamos desenvolvendo isso !</string>
+    <string name="sobre">Sobre</string>
+    <string name="informa_o">Informação</string>
+    <string name="seguro">Seguro</string>
+    <string name="criador">Criador</string>
 </resources>

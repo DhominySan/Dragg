@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dragg</string>
+    <string name="come_ar">Start</string>
+    <string name="deslogar">Log Out</string>
+    <string name="senhaa">Password</string>
+    <string name="cadastrar">Register</string>
+    <string name="menu_home">Start</string>
+    <string name="voltar">Return</string>
+    <string name="vamos_come_ar">Let\'s start</string>
+    <string name="sobre_n_s">About Us</string>
+    <string name="nome">Name</string>
+    <string name="senha">Password</string>
+    <string name="cadastre_se">register</string>
+    <string name="entrar">Login</string>
+    <string name="seja_bem_vindo">Welcome !</string>
+    <string name="oque_deseja_hoje">What do you want today?</string>
+    <string name="jogos">Games</string>
+    <string name="imagens">Images</string>
+    <string name="outros">Others</string>
+    <string name="Aviso">Ooops we are still developing this!</string>
+</resources>
