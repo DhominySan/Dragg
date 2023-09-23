@@ -17,6 +17,18 @@
         android:theme="@style/Theme.Dragg"
         tools:targetApi="31">
         <activity
+            android:name=".OfflineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EsporteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnimeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Recomendado1Activity"
+            android:exported="false" />
+        <activity
             android:name=".Jogos1Activity"
             android:exported="false" />
 

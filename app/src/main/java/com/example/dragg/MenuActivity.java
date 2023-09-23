@@ -39,7 +39,7 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Trocar para a SecondActivity quando o botão for clicado
-                Intent intent = new Intent(MenuActivity.this, HomeActivity.class);
+                Intent intent = new Intent(MenuActivity.this, Jogos1Activity.class);
                 startActivity(intent);
             }
         });

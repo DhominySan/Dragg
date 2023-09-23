@@ -28,4 +28,12 @@
     <string name="informa_o">Informação</string>
     <string name="seguro">Seguro</string>
     <string name="criador">Criador</string>
+    <string name="esporte">Esporte</string>
+    <string name="offline">Offline</string>
+    <string name="anime">Anime</string>
+    <string name="recomendado">Recomendado</string>
+    <string name="selecione_o_g_nero_do_jogo">Selecione o gênero do jogo</string>
+    <string name="texto_informacao">Um App desenvolvido para pessoas da comunidade gamer mobile que esteja procurando por jogos recomendados por outros gamers. Tendo nele algumas funções a mais como uma parte para baixar papeis de parede dos jogos que estão sendo recomendado para o usuário.</string>
+    <string name="texto_criador">Olá me chamo Dhominy Murillo e venho trazendo esse App para a galera dos games. Lembre que os jogos estimulam a criatividade e ainda trazem horas incríveis de diversão. Então espero que gostem e aproveitem bastante e se divirtam.</string>
+    <string name="bom_jogoooo">Bom Jogoooo !!!</string>
 </resources>
