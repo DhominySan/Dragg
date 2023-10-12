@@ -1,32 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/new_background"
-    tools:context=".MainActivity">
+    android:background="@drawable/new_background">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/voltar1"
-        android:layout_width="95dp"
-        android:layout_height="36dp"
-        android:background="@drawable/botaobackground2"
-        android:backgroundTint="#000000"
-        android:text="@string/voltar"
-        android:textColor="@color/fundo"
-        android:textSize="20dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <Button
-        android:id="@+id/btnDownload"
-        android:layout_width="wrap_content"
+    <!-- Seus elementos de layout aqui -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Baixar Imagem"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="253dp" />
+        android:orientation="vertical">
+
+        <!-- Conteúdo da Activity aqui -->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/voltar1"
+            android:layout_width="58dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="349dp"
+            android:background="@drawable/seta" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="Baixe um papel de parede" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/zpeka" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/botaobackground3"
+            android:id="@+id/btnDownload"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Baixar Imagem" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/zff" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/botaobackground3"
+            android:id="@+id/btnDownload2"
+            android:layout_gravity="center"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:text="Baixar Imagem" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/zzdyrroth" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/botaobackground3"
+            android:id="@+id/btnDownload3"
+            android:layout_gravity="center"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:text="Baixar Imagem" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/zvini" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/botaobackground3"
+            android:id="@+id/btnDownload4"
+            android:layout_gravity="center"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:text="Baixar Imagem" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="300dp"
+            android:src="@drawable/ztanjiro" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/botaobackground3"
+            android:id="@+id/btnDownload5"
+            android:layout_gravity="center"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:text="Baixar Imagem" />
+
+        <!-- Adicione mais elementos conforme necessário -->
+
+    </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

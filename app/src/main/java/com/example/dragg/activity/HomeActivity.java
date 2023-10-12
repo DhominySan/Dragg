@@ -7,7 +7,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.biometric.BiometricPrompt;
 import androidx.core.content.ContextCompat;
-
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -101,7 +103,6 @@ public class HomeActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-
 
 
 }
