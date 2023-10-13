@@ -27,7 +27,7 @@
             android:textSize="30sp"
             android:textColor="@color/black"
             android:gravity="center"
-            android:text="Baixe um papel de parede" />
+            android:text="@string/baixe_um_papel_de_parede" />
 
         <ImageView
             android:id="@+id/imageView10"
@@ -41,7 +41,7 @@
             android:layout_width="148dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Baixar Imagem" />
+            android:text="@string/baixar_imagem" />
 
         <ImageView
             android:id="@+id/imageView11"
@@ -55,7 +55,7 @@
             android:layout_gravity="center"
             android:layout_width="148dp"
             android:layout_height="wrap_content"
-            android:text="Baixar Imagem" />
+            android:text="@string/baixar_imagem" />
 
         <ImageView
             android:id="@+id/imageView12"
@@ -69,7 +69,7 @@
             android:layout_gravity="center"
             android:layout_width="148dp"
             android:layout_height="wrap_content"
-            android:text="Baixar Imagem" />
+            android:text="@string/baixar_imagem" />
 
         <ImageView
             android:id="@+id/imageView13"
@@ -83,7 +83,7 @@
             android:layout_gravity="center"
             android:layout_width="148dp"
             android:layout_height="wrap_content"
-            android:text="Baixar Imagem" />
+            android:text="@string/baixar_imagem" />
 
         <ImageView
             android:id="@+id/imageView14"
@@ -97,7 +97,7 @@
             android:layout_gravity="center"
             android:layout_width="148dp"
             android:layout_height="wrap_content"
-            android:text="Baixar Imagem" />
+            android:text="@string/baixar_imagem" />
 
         <!-- Adicione mais elementos conforme necessário -->
 

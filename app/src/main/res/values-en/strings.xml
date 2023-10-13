@@ -19,4 +19,23 @@
     <string name="imagens">Images</string>
     <string name="outros">Others</string>
     <string name="Aviso">Ooops we are still developing this!</string>
+    <string name="sobre">about</string>
+    <string name="informa_o">Information</string>
+    <string name="seguro">Safe</string>
+    <string name="criador">Creator</string>
+    <string name="esporte">Sport</string>
+    <string name="recomendado">Recommended</string>
+    <string name="selecione_o_g_nero_do_jogo">Select the game genre</string>
+    <string name="texto_informacao">An App developed for people in the mobile gaming community who are looking for games recommended by other gamers. It has some additional functions such as a part to download wallpapers of the games that are being recommended to the user.</string>
+    <string name="texto_criador">Hello, my name is Dhominy Murillo and I\'ve been bringing this App to the gaming crowd. Remember that games stimulate creativity and also bring incredible hours of fun. So I hope you like it, enjoy it a lot and have fun.</string>
+    <string name="bom_jogoooo">Good Game !!!</string>
+    <string name="texto_seguro">A completely safe and reliable App, you can rest assured the links you will enter will take you to the PlayStore ✅ (Popular games played by many people around you)</string>
+    <string name="texto_clash">Clash Royale is a real-time strategy game developed by Supercell. Players build decks of cards with troops, spells and buildings, competing in multiplayer matches to destroy their opponent\'s towers.</string>
+    <string name="texto_freefire">The game places 50 players on an island where they fight for survival until only one winner remains. Players search for weapons and equipment, while the map gradually shrinks.</string>
+    <string name="texto_mbl">Mobile Legends is a multiplayer battle game in which teams of five players compete to destroy the enemy base while fighting against heroes controlled by other players.</string>
+    <string name="texto_fifa">It is a football game, the game offers a simplified football experience and is updated regularly based on seasons and has real football events and events to earn rewards and improve your teams.</string>
+    <string name="baixar">Download</string>
+    <string name="texto_kimetsu">Game based on the story of the Demon Slayer anime, players face demons in action combat, controlling characters from the series, such as Tanjiro and Nezuko. The game combines fighting and RPG elements.</string>
+    <string name="baixe_um_papel_de_parede">Download a wallpaper</string>
+    <string name="baixar_imagem">Download Image</string>
 </resources>
