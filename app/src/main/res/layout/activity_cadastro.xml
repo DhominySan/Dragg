@@ -94,4 +94,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextSenha" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonVoltar"
+        android:layout_width="133dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="147dp"
+        android:background="#00000000"
+        android:backgroundTint="@color/black"
+        android:onClick="irlogin"
+        android:text="@string/entrarr"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCadastrar" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

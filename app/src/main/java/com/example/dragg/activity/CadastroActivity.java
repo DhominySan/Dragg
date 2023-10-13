@@ -1,5 +1,6 @@
 package com.example.dragg.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -116,6 +117,11 @@ public class CadastroActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void irlogin(View v){
+        Intent i = new Intent(this, LoginActivity.class);
+        startActivity(i);
     }
 
 }
