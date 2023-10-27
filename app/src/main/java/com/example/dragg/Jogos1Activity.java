@@ -7,6 +7,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.dragg.generos.AnimeActivity;
+import com.example.dragg.generos.EsporteActivity;
+import com.example.dragg.generos.OfflineActivity;
+import com.example.dragg.generos.Recomendado1Activity;
+
 public class Jogos1Activity extends AppCompatActivity {
 
     @Override
@@ -22,6 +27,7 @@ public class Jogos1Activity extends AppCompatActivity {
                 // Trocar para a SecondActivity quando o botão for clicado
                 Intent intent = new Intent(Jogos1Activity.this, Recomendado1Activity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -32,6 +38,7 @@ public class Jogos1Activity extends AppCompatActivity {
                 // Trocar para a SecondActivity quando o botão for clicado
                 Intent intent = new Intent(Jogos1Activity.this, AnimeActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -42,6 +49,7 @@ public class Jogos1Activity extends AppCompatActivity {
                 // Trocar para a SecondActivity quando o botão for clicado
                 Intent intent = new Intent(Jogos1Activity.this, EsporteActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -52,6 +60,7 @@ public class Jogos1Activity extends AppCompatActivity {
                 // Trocar para a SecondActivity quando o botão for clicado
                 Intent intent = new Intent(Jogos1Activity.this, OfflineActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -62,6 +71,7 @@ public class Jogos1Activity extends AppCompatActivity {
                 // Trocar para a SecondActivity quando o botão for clicado
                 Intent intent = new Intent(Jogos1Activity.this, MenuActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 

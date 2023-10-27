@@ -1,4 +1,4 @@
-package com.example.dragg;
+package com.example.dragg.jogos;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
@@ -9,20 +9,24 @@ import android.view.View;
 import android.net.Uri;
 import android.widget.Button;
 
-public class Kimetsu extends AppCompatActivity {
+import com.example.dragg.R;
+import com.example.dragg.generos.AnimeActivity;
+import com.example.dragg.generos.Recomendado1Activity;
+
+public class OnePiece extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kimetsu);
+        setContentView(R.layout.activity_one_piece);
 
         //botao com link
-        Button baixarKimetsu = findViewById(R.id.baixarKimetsu);
-        baixarKimetsu.setOnClickListener(new View.OnClickListener() {
+        Button baixarOnePiece = findViewById(R.id.baixarOnePiece);
+        baixarOnePiece.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // URL que você deseja abrir no navegador
-                String url = "https://play.google.com/store/apps/details?id=com.hoptimistgames.demonslayerfightinggame";
+                String url = "https://play.google.com/store/apps/details?id=com.bandainamcoent.opbrww";
 
                 // Cria uma Intent com a ação ACTION_VIEW e a URL como dado
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
@@ -38,12 +42,12 @@ public class Kimetsu extends AppCompatActivity {
         //final botao com link
 
         //BOTAO VOLTAR
-        AppCompatButton btnVoltarClashR = findViewById(R.id.btnVoltarClashR);
-        btnVoltarClashR.setOnClickListener(new View.OnClickListener() {
+        AppCompatButton btnVoltarOnePiece = findViewById(R.id.btnVoltarOnePiece);
+        btnVoltarOnePiece.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // Trocar para a SecondActivity quando o botão for clicado
-                Intent intent = new Intent(Kimetsu.this, Recomendado1Activity.class);
+                Intent intent = new Intent(OnePiece.this, AnimeActivity.class);
                 startActivity(intent);
                 finish();
             }

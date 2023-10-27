@@ -37,4 +37,5 @@ public class ImagensFragment extends Fragment {
 
         return view;
     }
+
 }

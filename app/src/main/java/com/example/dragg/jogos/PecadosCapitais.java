@@ -1,4 +1,4 @@
-package com.example.dragg;
+package com.example.dragg.jogos;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
@@ -9,20 +9,23 @@ import android.view.View;
 import android.net.Uri;
 import android.widget.Button;
 
-public class MbLegends extends AppCompatActivity {
+import com.example.dragg.R;
+import com.example.dragg.generos.AnimeActivity;
+
+public class PecadosCapitais extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mb_legends);
+        setContentView(R.layout.activity_pecados_capitais);
 
         //botao com link
-        Button baixarMbLegends = findViewById(R.id.baixarMbLegends);
-        baixarMbLegends.setOnClickListener(new View.OnClickListener() {
+        Button baixarPecadosCapitais = findViewById(R.id.baixarPecadosCapitais);
+        baixarPecadosCapitais.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // URL que você deseja abrir no navegador
-                String url = "https://play.google.com/store/apps/details?id=com.mobile.legends";
+                String url = "https://play.google.com/store/apps/details?id=com.netmarble.nanagb";
 
                 // Cria uma Intent com a ação ACTION_VIEW e a URL como dado
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
@@ -38,12 +41,12 @@ public class MbLegends extends AppCompatActivity {
         //final botao com link
 
         //BOTAO VOLTAR
-        AppCompatButton btnVoltarClashR = findViewById(R.id.btnVoltarClashR);
-        btnVoltarClashR.setOnClickListener(new View.OnClickListener() {
+        AppCompatButton btnVoltarPecadosCapitais = findViewById(R.id.btnVoltarPecadosCapitais);
+        btnVoltarPecadosCapitais.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // Trocar para a SecondActivity quando o botão for clicado
-                Intent intent = new Intent(MbLegends.this, Recomendado1Activity.class);
+                Intent intent = new Intent(PecadosCapitais.this, AnimeActivity.class);
                 startActivity(intent);
                 finish();
             }

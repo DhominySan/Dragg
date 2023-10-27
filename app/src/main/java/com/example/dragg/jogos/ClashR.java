@@ -1,4 +1,4 @@
-package com.example.dragg;
+package com.example.dragg.jogos;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
@@ -8,6 +8,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.net.Uri;
 import android.widget.Button;
+
+import com.example.dragg.R;
+import com.example.dragg.generos.Recomendado1Activity;
 
 public class ClashR extends AppCompatActivity {
 

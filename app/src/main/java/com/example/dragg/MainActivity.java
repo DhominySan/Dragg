@@ -96,6 +96,7 @@ public class MainActivity extends Activity {
                 // Trocar para a SecondActivity quando o botão for clicado
                 Intent intent = new Intent(MainActivity.this, MenuActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 

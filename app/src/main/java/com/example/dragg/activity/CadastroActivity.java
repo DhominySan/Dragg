@@ -122,6 +122,7 @@ public class CadastroActivity extends AppCompatActivity {
     public void irlogin(View v){
         Intent i = new Intent(this, LoginActivity.class);
         startActivity(i);
+        finish();
     }
 
 }

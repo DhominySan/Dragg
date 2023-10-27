@@ -1,12 +1,10 @@
-package com.example.dragg;
+package com.example.dragg.generos;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 import android.os.Bundle;
 
 import android.app.Activity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -14,7 +12,13 @@ import android.widget.ListView;
 import android.widget.SearchView;
 import android.content.Intent;
 
-import com.example.dragg.ClashR;
+import com.example.dragg.Jogos1Activity;
+import com.example.dragg.R;
+import com.example.dragg.jogos.ClashR;
+import com.example.dragg.jogos.FifaM;
+import com.example.dragg.jogos.FreeF;
+import com.example.dragg.jogos.Kimetsu;
+import com.example.dragg.jogos.MbLegends;
 
 public class Recomendado1Activity extends Activity {
 
@@ -78,6 +82,7 @@ public class Recomendado1Activity extends Activity {
                 }
 
                 startActivity(intent);
+                finish();
             }
 
         });
@@ -89,6 +94,7 @@ public class Recomendado1Activity extends Activity {
                 // Trocar para a SecondActivity quando o botão for clicado
                 Intent intent = new Intent(Recomendado1Activity.this, Jogos1Activity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

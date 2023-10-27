@@ -88,12 +88,14 @@ public void validarAutenticacao(View view){
     private void abrirHome() {
         Intent i = new Intent(LoginActivity.this, HomeActivity.class);
         startActivity(i);
+        finish();
     }
 
 
     public void cadastrar(View v){
         Intent i = new Intent(this, CadastroActivity.class);
         startActivity(i);
+        finish();
     }
 
 @Override

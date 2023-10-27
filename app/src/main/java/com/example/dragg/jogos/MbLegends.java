@@ -1,4 +1,4 @@
-package com.example.dragg;
+package com.example.dragg.jogos;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
@@ -9,20 +9,23 @@ import android.view.View;
 import android.net.Uri;
 import android.widget.Button;
 
-public class FreeF extends AppCompatActivity {
+import com.example.dragg.R;
+import com.example.dragg.generos.Recomendado1Activity;
+
+public class MbLegends extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_free_f);
+        setContentView(R.layout.activity_mb_legends);
 
         //botao com link
-        Button baixarFreef = findViewById(R.id.baixarFreef);
-        baixarFreef.setOnClickListener(new View.OnClickListener() {
+        Button baixarMbLegends = findViewById(R.id.baixarMbLegends);
+        baixarMbLegends.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // URL que você deseja abrir no navegador
-                String url = "https://play.google.com/store/apps/details?id=com.dts.freefireth";
+                String url = "https://play.google.com/store/apps/details?id=com.mobile.legends";
 
                 // Cria uma Intent com a ação ACTION_VIEW e a URL como dado
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
@@ -43,13 +46,11 @@ public class FreeF extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Trocar para a SecondActivity quando o botão for clicado
-                Intent intent = new Intent(FreeF.this, Recomendado1Activity.class);
+                Intent intent = new Intent(MbLegends.this, Recomendado1Activity.class);
                 startActivity(intent);
                 finish();
             }
-        }
-
-        );
+        });
         // FINAL BOTAO VOLTAR
     }
 }

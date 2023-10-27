@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.USE_BIOMETRIC" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -18,34 +17,49 @@
         android:theme="@style/Theme.Dragg"
         tools:targetApi="31">
         <activity
-            android:name=".Kimetsu"
+            android:name=".jogos.PecadosCapitais"
             android:exported="false" />
         <activity
-            android:name=".FifaM"
+            android:name=".jogos.MyHero"
             android:exported="false" />
         <activity
-            android:name=".MbLegends"
+            android:name=".jogos.OnePiece"
             android:exported="false" />
         <activity
-            android:name=".FreeF"
+            android:name=".jogos.Naruto"
             android:exported="false" />
         <activity
-            android:name=".ClashR"
+            android:name=".jogos.DragonBall"
+            android:exported="false" />
+        <activity
+            android:name=".jogos.Kimetsu"
+            android:exported="false" />
+        <activity
+            android:name=".jogos.FifaM"
+            android:exported="false" />
+        <activity
+            android:name=".jogos.MbLegends"
+            android:exported="false" />
+        <activity
+            android:name=".jogos.FreeF"
+            android:exported="false" />
+        <activity
+            android:name=".jogos.ClashR"
             android:exported="false" />
         <activity
             android:name=".Recomendado2Activity"
             android:exported="false" />
         <activity
-            android:name=".OfflineActivity"
+            android:name=".generos.OfflineActivity"
             android:exported="false" />
         <activity
-            android:name=".EsporteActivity"
+            android:name=".generos.EsporteActivity"
             android:exported="false" />
         <activity
-            android:name=".AnimeActivity"
+            android:name=".generos.AnimeActivity"
             android:exported="false" />
         <activity
-            android:name=".Recomendado1Activity"
+            android:name=".generos.Recomendado1Activity"
             android:exported="false" />
         <activity
             android:name=".Jogos1Activity"

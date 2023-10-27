@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".jogos.FifaM"
+    tools:context=".jogos.MyHero"
     android:background="@drawable/new_background">
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnVoltarClashR"
+        android:id="@+id/btnVoltarMyHero"
         android:layout_width="58dp"
         android:layout_height="55dp"
         android:background="@drawable/seta"
@@ -23,7 +23,7 @@
         android:layout_marginEnd="106dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fifaicon" />
+        app:srcCompat="@drawable/zmyhero" />
 
     <TextView
         android:id="@+id/textView3"
@@ -32,14 +32,14 @@
         android:layout_marginStart="27dp"
         android:layout_marginTop="13dp"
         android:gravity="center"
-        android:text="@string/texto_fifa"
+        android:text="@string/resumo_myhero"
         android:textColor="#000000"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/baixarFifaM"
+        android:id="@+id/baixarMyHero"
         android:layout_width="285dp"
         android:layout_height="65dp"
         android:layout_marginTop="11dp"
