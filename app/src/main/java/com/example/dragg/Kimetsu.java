@@ -45,6 +45,7 @@ public class Kimetsu extends AppCompatActivity {
                 // Trocar para a SecondActivity quando o botão for clicado
                 Intent intent = new Intent(Kimetsu.this, Recomendado1Activity.class);
                 startActivity(intent);
+                finish();
             }
         });
         // FINAL BOTAO VOLTAR

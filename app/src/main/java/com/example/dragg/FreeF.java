@@ -45,8 +45,11 @@ public class FreeF extends AppCompatActivity {
                 // Trocar para a SecondActivity quando o botão for clicado
                 Intent intent = new Intent(FreeF.this, Recomendado1Activity.class);
                 startActivity(intent);
+                finish();
             }
-        });
+        }
+
+        );
         // FINAL BOTAO VOLTAR
     }
 }

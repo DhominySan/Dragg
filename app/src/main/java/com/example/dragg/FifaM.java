@@ -45,6 +45,7 @@ public class FifaM extends AppCompatActivity {
                 // Trocar para a SecondActivity quando o botão for clicado
                 Intent intent = new Intent(FifaM.this, Recomendado1Activity.class);
                 startActivity(intent);
+                finish();
             }
         });
         // FINAL BOTAO VOLTAR

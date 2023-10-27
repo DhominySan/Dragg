@@ -45,6 +45,7 @@ public class ClashR extends AppCompatActivity {
                 // Trocar para a SecondActivity quando o botão for clicado
                 Intent intent = new Intent(ClashR.this, Recomendado1Activity.class);
                 startActivity(intent);
+                finish();
             }
         });
         // FINAL BOTAO VOLTAR
