@@ -17,6 +17,9 @@
         android:theme="@style/Theme.Dragg"
         tools:targetApi="31">
         <activity
+            android:name=".jogos.MainUfc"
+            android:exported="false" />
+        <activity
             android:name=".jogos.PecadosCapitais"
             android:exported="false" />
         <activity
