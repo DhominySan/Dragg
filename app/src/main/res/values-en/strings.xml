@@ -18,7 +18,6 @@
     <string name="jogos">Games</string>
     <string name="imagens">Images</string>
     <string name="outros">Others</string>
-    <string name="Aviso">Ooops we are still developing this!</string>
     <string name="sobre">about</string>
     <string name="informa_o">Information</string>
     <string name="seguro">Safe</string>
@@ -39,4 +38,20 @@
     <string name="baixe_um_papel_de_parede">Download a wallpaper</string>
     <string name="baixar_imagem">Download Image</string>
     <string name="entrarr">L͟o͟g͟i͟n</string>
+    <string name="resumo_dbz">It is a mobile fighting game based on the popular Dragon Ball franchise. Players build teams of iconic characters, participate in real-time battles, and explore an original story.</string>
+    <string name="resumo_naruto">is a mobile game based on the Naruto franchise. Players build fortresses and participate in strategic battles with characters from Naruto and Boruto. The game combines action and tower defense elements.</string>
+    <string name="resumo_onepiece">is a team action mobile game based on the famous One Piece series. Players form teams with iconic characters and compete in real-time multiplayer battles to collect treasure and defeat their opponents.</string>
+    <string name="resumo_myhero">is an action game based on the popular anime and manga My Hero Academia. Players assemble teams of heroes and villains from the world of My Hero Academia and participate in real-time tactical battles.</string>
+    <string name="resumo_pecado_capital">is an adventure role-playing mobile game based on the anime and manga The Seven Deadly Sins. Players embark on a journey with characters from the world of the series, participating in strategic battles.</string>
+    <string name="resumo_ufc">is a fighting video game based on the UFC. Players can choose from a wide variety of UFC fighters and compete in realistic and strategic combat with sophisticated controls.</string>
+    <string name="conta">Account</string>
+    <string name="resumo_nba">It is a game that allows players to assemble their own teams, compete in real-time basketball matches, and participate in events and challenges. The game offers NBA authenticity,</string>
+    <string name="resumo_the_spike">The game focuses on telling an engaging story as players advance through their volleyball career, becoming one of the best teams in the world.</string>
+    <string name="resumo_ping_pong">The game is known for its intuitive gameplay mechanics and responsive controls, providing an exciting table tennis experience.</string>
+    <string name="resumo_ball_pool">It\'s a pool game for mobile devices and social media. Players compete in 8-ball pool matches, challenging friends or random players online.</string>
+    <string name="resumo_shadow_fight">is a fighting game that combines RPG and martial arts elements. Players explore a world of shadows, assemble characters, learn skills.</string>
+    <string name="resumo_stickman">It is an action game that features stickman heroes fighting against hordes of enemies and powerful bosses. The game is known for its simple gameplay and cartoon-style action.</string>
+    <string name="resumo_vectorr">It\'s a parkour game where players control a character who needs to overcome obstacles and enemies in a futuristic city. Players try to escape a totalitarian regime.</string>
+    <string name="resumo_altos">It is a snowboarding game that offers a relaxing snow skiing experience. Players glide through beautiful mountain landscapes, collect lost llamas and perform acrobatic maneuvers.</string>
+    <string name="resumo_tomb_mask">It\'s an action game where players explore a tomb vertically, sliding their character through mazes and avoiding obstacles while collecting points and items.</string>
 </resources>

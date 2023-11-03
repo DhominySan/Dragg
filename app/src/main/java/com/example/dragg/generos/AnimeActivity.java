@@ -1,35 +1,32 @@
 package com.example.dragg.generos;
+
 import androidx.appcompat.widget.AppCompatButton;
-
 import android.os.Bundle;
-
-import android.app.Activity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.content.Intent;
-
+import androidx.appcompat.app.AppCompatActivity;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import com.example.dragg.Jogos1Activity;
 import com.example.dragg.R;
-import com.example.dragg.jogos.ClashR;
 import com.example.dragg.jogos.DragonBall;
-import com.example.dragg.jogos.FifaM;
-import com.example.dragg.jogos.FreeF;
-import com.example.dragg.jogos.Kimetsu;
-import com.example.dragg.jogos.MbLegends;
 import com.example.dragg.jogos.MyHero;
 import com.example.dragg.jogos.Naruto;
 import com.example.dragg.jogos.OnePiece;
 import com.example.dragg.jogos.PecadosCapitais;
 
-public class AnimeActivity extends Activity {
+public class AnimeActivity extends AppCompatActivity {
 
     private SearchView searchView;
     private ListView listView;
     private ArrayAdapter<String> adapter;
-    private String[] items = {"Dragon Ball Legends", "Naruto - Ninja Voltage", "The Seven Deadly Sins", "One Piece Bounty Rush", "MY HERO ULTRA IMPACT"};
+    private List<String> originalItems;
+    private List<String> filteredItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +36,17 @@ public class AnimeActivity extends Activity {
         listView = findViewById(R.id.listView);
         searchView = findViewById(R.id.searchView);
 
+        originalItems = new ArrayList<>();
+        Collections.addAll(originalItems, "Dragon Ball Legends", "Naruto - Ninja Voltage", "The Seven Deadly Sins", "One Piece Bounty Rush", "MY HERO ULTRA IMPACT");
 
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
+        // Fazer uma cópia dos dados originais para a lista de filtragem.
+        filteredItems = new ArrayList<>(originalItems);
+
+        // Classificar a lista de filtragem (O(n log n)).
+        Collections.sort(filteredItems);
+
+        // Criar um adaptador para a ListView.
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, filteredItems);
         listView.setAdapter(adapter);
 
         // Configurar filtro para o SearchView
@@ -52,7 +58,16 @@ public class AnimeActivity extends Activity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                adapter.getFilter().filter(newText);
+                filteredItems.clear();
+
+                for (String item : originalItems) {
+                    if (item.toLowerCase().contains(newText.toLowerCase())) {
+                        filteredItems.add(item);
+                    }
+                }
+
+                adapter.notifyDataSetChanged();
+
                 return true;
             }
         });
@@ -71,16 +86,11 @@ public class AnimeActivity extends Activity {
                     intent = new Intent(AnimeActivity.this, Naruto.class);
                 } else if (selectedItem.equals("The Seven Deadly Sins")) {
                     intent = new Intent(AnimeActivity.this, PecadosCapitais.class);
-                }else if (selectedItem.equals("One Piece Bounty Rush")) {
+                } else if (selectedItem.equals("One Piece Bounty Rush")) {
                     intent = new Intent(AnimeActivity.this, OnePiece.class);
-                }else if (selectedItem.equals("MY HERO ULTRA IMPACT")) {
+                } else if (selectedItem.equals("MY HERO ULTRA IMPACT")) {
                     intent = new Intent(AnimeActivity.this, MyHero.class);
-                }else if (selectedItem.equals("Item 6")) {
-                    intent = new Intent(AnimeActivity.this, ClashR.class);
-                }
-
-
-                else {
+                } else {
                     // Caso padrão, se nenhum item corresponder
                     intent = new Intent(AnimeActivity.this, AnimeActivity.class);
                 }
@@ -88,7 +98,6 @@ public class AnimeActivity extends Activity {
                 startActivity(intent);
                 finish();
             }
-
         });
 
         AppCompatButton btnVoltarAnime = findViewById(R.id.btnVoltarAnime);

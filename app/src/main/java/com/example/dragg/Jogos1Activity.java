@@ -27,7 +27,6 @@ public class Jogos1Activity extends AppCompatActivity {
                 // Trocar para a SecondActivity quando o botão for clicado
                 Intent intent = new Intent(Jogos1Activity.this, Recomendado1Activity.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -38,7 +37,6 @@ public class Jogos1Activity extends AppCompatActivity {
                 // Trocar para a SecondActivity quando o botão for clicado
                 Intent intent = new Intent(Jogos1Activity.this, AnimeActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -49,7 +47,6 @@ public class Jogos1Activity extends AppCompatActivity {
                 // Trocar para a SecondActivity quando o botão for clicado
                 Intent intent = new Intent(Jogos1Activity.this, EsporteActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -60,7 +57,6 @@ public class Jogos1Activity extends AppCompatActivity {
                 // Trocar para a SecondActivity quando o botão for clicado
                 Intent intent = new Intent(Jogos1Activity.this, OfflineActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
 

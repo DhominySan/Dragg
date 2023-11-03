@@ -17,6 +17,33 @@
         android:theme="@style/Theme.Dragg"
         tools:targetApi="31">
         <activity
+            android:name=".jogos.TombMask"
+            android:exported="false" />
+        <activity
+            android:name=".jogos.AltosAdventure"
+            android:exported="false" />
+        <activity
+            android:name=".jogos.Vectorr"
+            android:exported="false" />
+        <activity
+            android:name=".jogos.StickmanLegends"
+            android:exported="false" />
+        <activity
+            android:name=".jogos.ShadowFight"
+            android:exported="false" />
+        <activity
+            android:name=".jogos.BallPool"
+            android:exported="false" />
+        <activity
+            android:name=".jogos.PingPong"
+            android:exported="false" />
+        <activity
+            android:name=".jogos.TheSpike"
+            android:exported="false" />
+        <activity
+            android:name=".jogos.NBA_Live"
+            android:exported="false" />
+        <activity
             android:name=".jogos.MainUfc"
             android:exported="false" />
         <activity

@@ -6,10 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.dragg.R;
 import com.example.dragg.Util.ConfiguracaoBd;
 import com.example.dragg.model.Usuario;

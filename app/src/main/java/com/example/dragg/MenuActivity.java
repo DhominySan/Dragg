@@ -54,7 +54,6 @@ public class MenuActivity extends AppCompatActivity {
                 // Trocar para a SecondActivity quando o botão for clicado
                 Intent intent = new Intent(MenuActivity.this, Jogos1Activity.class);
                 startActivity(intent);
-                finish();
             }
         });
         AppCompatButton btnImagens = findViewById(R.id.btnImagens);
@@ -64,7 +63,6 @@ public class MenuActivity extends AppCompatActivity {
                 // Trocar para a SecondActivity quando o botão for clicado
                 Intent intent = new Intent(MenuActivity.this, MainActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -74,7 +72,6 @@ public class MenuActivity extends AppCompatActivity {
                 // Trocar para a SecondActivity quando o botão for clicado
                 Intent intent = new Intent(MenuActivity.this, OutrosActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
 

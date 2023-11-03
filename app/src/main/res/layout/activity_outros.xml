@@ -1,65 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/new_background"
-    tools:context=".OutrosActivity"
-    tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="78dp">
+    tools:context=".OutrosActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnVoltarOutros"
+        android:layout_width="58dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="349dp"
+        android:background="@drawable/seta" />
 
     <ImageView
-        android:id="@+id/imageViewProfile"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="130dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="131dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/ic_perfi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/profileImageView"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="16dp"
+        android:src="@drawable/ic_perfi" />
 
-    <Button
-        android:id="@+id/selecionarImagemButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="117dp"
-        android:text="Trocar Foto de Perfil"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewProfile" />
+    <ImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="200dp"
+        android:layout_below="@id/emailTextView"
+        android:layout_height="200dp"
+        android:src="@drawable/demail"
+        android:layout_centerInParent="true" />
+
 
     <TextView
-        android:id="@+id/textNomeUsuario"
+        android:id="@+id/emailTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:text="Nome: "
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_below="@+id/profileImageView"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:paddingTop="30dp" />
 
-    <TextView
-        android:id="@+id/textEmailUsuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginEnd="274dp"
-        android:layout_marginBottom="354dp"
-        android:text="Email: "
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logoutButton"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        app:cornerRadius="10dp"
+        android:layout_below="@+id/gifImageView"
+        android:textSize="22sp"
+        app:backgroundTint="@color/black"
+        android:textColor="@color/fundo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:text="@string/deslogar" />
+</RelativeLayout>

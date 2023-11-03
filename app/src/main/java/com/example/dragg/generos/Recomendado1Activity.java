@@ -11,7 +11,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.content.Intent;
-
 import com.example.dragg.Jogos1Activity;
 import com.example.dragg.R;
 import com.example.dragg.jogos.ClashR;
@@ -20,12 +19,16 @@ import com.example.dragg.jogos.FreeF;
 import com.example.dragg.jogos.Kimetsu;
 import com.example.dragg.jogos.MbLegends;
 
-public class Recomendado1Activity extends Activity {
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
+public class Recomendado1Activity extends Activity {
     private SearchView searchView;
     private ListView listView;
     private ArrayAdapter<String> adapter;
-    private String[] items = {"Clash Royale", "Free Fire", "Mobile Legends", "EA Sports FC", "Kimetsu Fight"};
+    private List<String> originalItems;
+    private List<String> filteredItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +38,17 @@ public class Recomendado1Activity extends Activity {
         listView = findViewById(R.id.listView);
         searchView = findViewById(R.id.searchView);
 
+        originalItems = new ArrayList<>();
+        Collections.addAll(originalItems, "Clash Royale", "Free Fire", "Mobile Legends", "EA Sports FC", "Kimetsu Fight");
 
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
+                // Fazer uma cópia dos dados originais para a lista de filtragem.
+                filteredItems = new ArrayList<>(originalItems);
+
+        // Classificar a lista de filtragem (O(n log n)).
+        Collections.sort(filteredItems);
+
+        // Criar um adaptador para a ListView.
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, filteredItems);
         listView.setAdapter(adapter);
 
         // Configurar filtro para o SearchView
@@ -48,7 +60,16 @@ public class Recomendado1Activity extends Activity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                adapter.getFilter().filter(newText);
+                filteredItems.clear();
+
+                for (String item : originalItems) {
+                    if (item.toLowerCase().contains(newText.toLowerCase())) {
+                        filteredItems.add(item);
+                    }
+                }
+
+                adapter.notifyDataSetChanged();
+
                 return true;
             }
         });
@@ -67,16 +88,11 @@ public class Recomendado1Activity extends Activity {
                     intent = new Intent(Recomendado1Activity.this, FreeF.class);
                 } else if (selectedItem.equals("Mobile Legends")) {
                     intent = new Intent(Recomendado1Activity.this, MbLegends.class);
-                }else if (selectedItem.equals("EA Sports FC")) {
+                } else if (selectedItem.equals("EA Sports FC")) {
                     intent = new Intent(Recomendado1Activity.this, FifaM.class);
-                }else if (selectedItem.equals("Kimetsu Fight")) {
+                } else if (selectedItem.equals("Kimetsu Fight")) {
                     intent = new Intent(Recomendado1Activity.this, Kimetsu.class);
-                }else if (selectedItem.equals("Item 6")) {
-                    intent = new Intent(Recomendado1Activity.this, ClashR.class);
-                }
-
-
-                else {
+                } else {
                     // Caso padrão, se nenhum item corresponder
                     intent = new Intent(Recomendado1Activity.this, Recomendado1Activity.class);
                 }
@@ -84,7 +100,6 @@ public class Recomendado1Activity extends Activity {
                 startActivity(intent);
                 finish();
             }
-
         });
 
         AppCompatButton btnVoltarRecomendado = findViewById(R.id.btnVoltarRecomendado);

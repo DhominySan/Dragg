@@ -70,7 +70,6 @@ public class HomeActivity extends AppCompatActivity {
                 // O dispositivo não suporta biometria, vá diretamente para a MenuActivity
                 Intent intent = new Intent(HomeActivity.this, MenuActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
     }
@@ -84,13 +83,11 @@ public class HomeActivity extends AppCompatActivity {
     public void comecaar(View v){
         Intent i = new Intent(this, SelecaoActivity.class);
         startActivity(i);
-        finish();
     }
 
     public void testbaixar(View v){
         Intent i = new Intent(this, MenuActivity.class);
         startActivity(i);
-        finish();
     }
 
 

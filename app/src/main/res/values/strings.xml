@@ -23,7 +23,6 @@
     <string name="jogos">Jogos</string>
     <string name="imagens">Imagens</string>
     <string name="outros">Outros</string>
-    <string name="Aviso" translatable="false">Ooops ainda estamos desenvolvendo isso !</string>
     <string name="sobre">Sobre</string>
     <string name="informa_o">Informação</string>
     <string name="seguro">Seguro</string>
@@ -52,4 +51,14 @@
     <string name="resumo_myhero">é um jogo de ação baseado no popular anime e mangá My Hero Academia. Os jogadores montam equipes de heróis e vilões do mundo de My Hero Academia e participam de batalhas táticas em tempo real.</string>
     <string name="resumo_pecado_capital">é um jogo móvel de RPG de aventura baseado no anime e mangá The Seven Deadly Sins. Os jogadores embarcam em uma jornada com personagens do mundo da série, participando de batalhas estratégicas.</string>
     <string name="resumo_ufc">é um jogo de videogame de luta baseado no UFC. Os jogadores podem escolher entre uma ampla variedade de lutadores do UFC e competir em combates realistas e estratégicos, com controles sofisticados.</string>
+    <string name="conta">Conta</string>
+    <string name="resumo_nba">É um jogo que permite aos jogadores montar suas próprias equipes, competir em partidas de basquete em tempo real e participar de eventos e desafios. O jogo oferece a autenticidade da NBA,</string>
+    <string name="resumo_the_spike">O jogo se concentra em contar uma história envolvente à medida que os jogadores avançam em sua carreira no vôlei, tornando-se um dos melhores times do mundo.</string>
+    <string name="resumo_ping_pong">O jogo é conhecido por sua mecânica de jogabilidade intuitiva e controles responsivos, proporcionando uma experiência emocionante de tênis de mesa.</string>
+    <string name="resumo_ball_pool">É um jogo de sinuca para dispositivos móveis e redes sociais. Os jogadores competem em partidas de sinuca 8-ball, desafiando amigos ou jogadores aleatórios online.</string>
+    <string name="resumo_shadow_fight">é um jogo de luta que combina elementos de RPG e artes marciais. Os jogadores exploram um mundo de sombras, montam personagens, aprendem habilidades.</string>
+    <string name="resumo_stickman">É um jogo de ação que apresenta heróis stickman em combates contra hordas de inimigos e chefes poderosos. O jogo é conhecido por sua jogabilidade simples e ação em estilo de desenho.</string>
+    <string name="resumo_vectorr">É um jogo de parkour onde os jogadores controlam um personagem que precisa superar obstáculos e inimigos em uma cidade futurística. Os jogadores tentam escapar de um regime totalitário.</string>
+    <string name="resumo_altos">É um jogo de snowboarding que oferece uma experiência relaxante de esqui na neve. Os jogadores deslizam por belas paisagens montanhosas, coletam lhamas perdidas e realizam manobras acrobáticas.</string>
+    <string name="resumo_tomb_mask">É um jogo de ação onde os jogadores exploram uma tumba verticalmente, deslizando o personagem através de labirintos e evitando obstáculos enquanto coletam pontos e itens.</string>
 </resources>

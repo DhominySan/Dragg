@@ -105,7 +105,7 @@
         android:layout_marginTop="533dp"
         android:layout_marginEnd="63dp"
         android:background="@drawable/botaobackground3"
-        android:text="@string/outros"
+        android:text="@string/conta"
         android:textColor="@color/black"
         android:textSize="26sp"
         android:textStyle="italic"

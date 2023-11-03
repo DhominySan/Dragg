@@ -66,28 +66,35 @@
         app:layout_constraintStart_toStartOf="@+id/editTextEmailLogin"
         app:layout_constraintTop_toBottomOf="@+id/editTextEmailLogin" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonAcessar2"
-        android:layout_width="133dp"
-        android:layout_height="48dp"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="156dp"
-        android:background="@drawable/botaobackground2"
+        app:cornerRadius="4dp"
         android:onClick="cadastrar"
         android:text="@string/cadastre_se"
         android:textColor="#479BFF"
         android:textSize="17sp"
+        app:backgroundTint="@color/black"
+        app:rippleColor="#2B2B2B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonAcessar" />
 
-    <androidx.appcompat.widget.AppCompatButton
+
+
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonAcessar"
-        android:layout_width="133dp"
-        android:layout_height="48dp"
+        android:layout_width="139dp"
+        android:layout_height="42dp"
         android:layout_marginBottom="27dp"
         android:background="@drawable/botaobackground"
-        android:backgroundTint="@color/black"
+        app:backgroundTint="@color/black"
+        android:textColor="@color/black"
+        app:rippleColor="#4096FF"
         android:onClick="validarAutenticacao"
         android:text="@string/entrar"
         android:textSize="17sp"

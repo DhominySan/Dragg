@@ -17,22 +17,14 @@
         tools:ignore="MissingConstraints">
 
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/buttonDeslogar"
-            android:layout_width="97dp"
-            android:layout_height="48dp"
-            android:background="@drawable/botaobackground"
-            android:backgroundTint="#000000"
-            android:onClick="deslogar"
-            android:text="@string/deslogar"
-            android:textSize="17sp"
-            tools:ignore="MissingConstraints" />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="207dp"
             android:layout_height="144dp"
             android:contentDescription="@string/LogoMain"
+            android:layout_marginLeft="110dp"
+            android:layout_centerInParent="true"
             app:srcCompat="@drawable/logodragg"
             tools:ignore="MissingConstraints" />
 
