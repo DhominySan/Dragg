@@ -28,7 +28,7 @@
         android:layout_width="200dp"
         android:layout_below="@id/emailTextView"
         android:layout_height="200dp"
-        android:src="@drawable/demail"
+        android:src="@drawable/ic_pessoa"
         android:layout_centerInParent="true" />
 
 
